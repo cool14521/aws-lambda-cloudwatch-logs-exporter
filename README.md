@@ -11,7 +11,7 @@ apex deploy
 You will find a `taskId` in the response of `apex invoke`.
 
 ```shell
-$ sh event_generator.sh 'my-first-export-task' '2017-12-23 16:00' '2017-12-23 16:30' | apex invoke cloudwatch_logs_exporter
+$ sh event_generator.sh 'my-first-export-task' '2017-12-23 16:00' '2017-12-23 16:30' | apex invoke cloudwatch_logs_exporter | jq .
 ```
 
 ## Check the result
