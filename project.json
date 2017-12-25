@@ -1,0 +1,9 @@
+{
+  "name": "apex",
+  "description": "Export logs from CloudWatch Logs to S3",
+  "environment": {
+    "LOG_GROUP_NAME": "[/lambda-cloudwatch-logs-exporter/target-log-group]",
+    "S3_BUCKET_NAME": "[your_s3_bucket]",
+    "S3_DESTINATION_NAME": "lambda-cloudwatch-logs-exporter"
+  }
+}

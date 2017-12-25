@@ -1,0 +1,12 @@
+{
+    "name": "cloudwatch_logs_exporter",
+    "description": "Export logs from CloudWatch Logs to S3",
+    "runtime": "python3.6",
+    "handler": "cloudwatch_logs_exporter.lambda_handler",
+    "memory": 128,
+    "timeout": 5,
+    "role": "arn:aws:iam::001234567890:role/cloudwatch-logs-exporter",
+    "hooks": {
+        "build": "pip install -r requirements.txt -t ."
+    }
+}
